@@ -2,6 +2,11 @@
 const fs = require('fs');
 
 let data;
+
+const intputUrl = process.argv[2]
+const outputUrl = process.argv[3]
+
+
 try {
 
     data = fs.readFileSync('./data/test.csv', 'utf8');
@@ -42,7 +47,7 @@ try {
         const obj = {};
         for (let j = 0; j < headersArray.length; j++) {
           const key = headersArray[j];
-          const value = rowArray[j]
+          const value = rowArray[j];
           
         }
 
